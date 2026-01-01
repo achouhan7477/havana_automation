@@ -68,3 +68,38 @@ This is a **real industry practice**, not a limitation.
 
 ## 📂 Folder Structure
 
+
+
+## 🏦 Wallet Module Automation
+
+The Wallet module represents the **core money system** of the casino platform.
+Automation is designed with a **strict API-first strategy** to avoid UI and WAF limitations.
+
+### 🔹 Wallet API Coverage
+
+#### ✅ Contract Tests
+- Wallet balance endpoint contract validation
+- Safe handling of protected routes (200 / 401 / 403 / 404)
+
+#### ❌ Invalid & Negative Scenarios
+- Invalid endpoints
+- Unexpected query parameters
+- Numeric overflow values
+- Graceful error handling (no crashes)
+
+#### 🔐 Security Tests
+- SQL Injection payloads
+- XSS payloads
+- Special characters abuse
+- Unicode currency symbols
+
+#### 🔁 Behaviour & Stability Tests
+- Multiple sequential balance calls
+- Rapid parallel requests
+- Concurrent request handling
+- Backend stability validation
+
+### 🎯 Key Outcome
+- Wallet APIs never crash
+- No 500 errors observed
+- Security and stability verified under load
